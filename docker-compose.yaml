@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql
+    container_name: test_task_hex
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: test_task_hex
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
